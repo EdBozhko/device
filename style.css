@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url(fonts/gilroyextrabold.woff2) format('woff2');
+    src: url(fonts/gilroyextrabold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url(fonts/gilroylight.woff2) format('woff2');
+    src: url(fonts/gilroylight.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url(fonts/opensans.woff2) format('woff2');
+    src: url(fonts/opensans.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensanslight';
+    src: url(fonts/opensanslight.woff2) format('woff2');
+    src: url(fonts/opensanslight.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header-logo:hover {
+    opacity: 0.6;
+}
+
+.main-header-logo:focus {
+    opacity: 0.3;
+}
+
+.main-navigation {
+    color: #000000;
+
+    background-color: #f7e296;
+}
+
+.main-header-search input[type="search"] {
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 15px;
+    opacity: 0.3;
+    border: none;
+    outline: none;
+    line-height: 30px;
+    background-color: transparent;
+}
+
+.main-header-search input:hover {
+    opacity: 0.6;
+}
+
+.main-header-search input:focus {
+    opacity: 1;
+}
+/*нет нижней границы*/
+
+.search-button {
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.search-button:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.search-button:focus {
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.3);
+}
+/*при нажатии должен меняться только текст кнопки*/
+
+.user-navigation {
+    list-style: none;
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.site-navigation {
+    list-style: none;
+    font-family: "open", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.catalog-menu {
+    list-style: none;
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.user-navigation a,
+.site-navigation a,
+.catalog-menu a {
+    color: #000000;
+    
+}
+
+.user-navigation a:hover,
+.site-navigation a:hover,
+.catalog-menu a:hover {
+    opacity: 0.6;
+}
+
+.user-navigation a:focus,
+.site-navigation a:focus,
+.catalog-menu a:focus {
+    opacity: 0.3;
+}
+
+.top-gadgets__slide-number {
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 179.2px;
+    line-height: 179.2px;
+    color: #ffffff;
+}
+
+.top-gadgets__tagline {
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 56px;
+}
+
+.top-gadgets__description {
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.button {
+    height: 40px;
+    width: 220px;
+    font-family: "gilroyextrabold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to top, transparent 40%, #f0c52e 40% 60%, transparent 60%);
+}
+
+.button:hover {
+    background: #f0c52e;
+}
+
+.button:focus {
+    background: #f0c52e;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.table_properties {
+    font-family: "gilroylight", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+
+.table_description {
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.top-gadgets__pagination-list {
+    list-style: none;
+}
