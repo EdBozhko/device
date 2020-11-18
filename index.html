@@ -50,7 +50,7 @@
                     <span class="top-gadgets__slide-number">01</span>
                     <p class="top-gadgets__tagline">Делай селфи, <br>как Бен Стиллер!</p>
                     <p class="top-gadgets__description">Самая длинная палка для селфи доступна в нашем магазине. <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                    <button class="button popup-button" type="button">Подробнее</button>
+                    <button class="button" type="button">Подробнее</button>
                     <table class="top-gadgets__characteristics">
                         <tr class="table_properties">
                             <td>8,5 м</td>
@@ -69,7 +69,7 @@
                     <span class="top-gadgets__slide-number">02</span>
                     <p class="top-gadgets__tagline">Худеем <br>правильно!</p>
                     <p class="top-gadgets__description">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать занятия и соблюдать диету.</p>
-                    <button class="button popup-button" type="button">Подробнее</button>
+                    <button class="button" type="button">Подробнее</button>
                     <table class="top-gadgets__characteristics">
                         <tr class="table_properties">
                             <td>48 часов</td>
@@ -84,7 +84,7 @@
                     <span class="top-gadgets__slide-number">03</span>
                     <p class="top-gadgets__tagline">Порхает как бабочка, <br>жалит как пчела!</p>
                     <p class="top-gadgets__description">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную камеру.</p>
-                    <button class="button popup-button" type="button">Подробнее</button>
+                    <button class="button" type="button">Подробнее</button>
                     <table class="top-gadgets__characteristics">
                         <tr class="table_properties">
                             <td>800 м</td>
@@ -121,7 +121,7 @@
             </section>
             <section class="services">
                 <h2 class="visually-hidden">Услуги</h2>
-                <ul>
+                <ul class="service-list">
                     <li><button class="button popup-button" type="button">Доставка</button></li>
                     <li><button class="button popup-button" type="button">Гарантия</button></li>
                     <li><button class="button popup-button" type="button">Кредит</button></li>
@@ -141,7 +141,7 @@
             </section>
             <section class="partners">
                 <h2 class="visually-hidden">Партнеры</h2>
-                <ul>
+                <ul class="partners-list">
                     <li><img src="img/logo-DJI.png" alt="Логотип DJI"></li>
                     <li><img src="img/logo-SPGadgets.png" alt="Логотип SPGadgets"></li>
                     <li><img src="img/logo-GoPro.png" alt="Логотип GoPro"></li>
@@ -152,43 +152,48 @@
                 <h2>О нас</h2>
                 <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                <ul>
+                <ul class="delivery-partners-list">
                     <li>Деловые Линии</li>
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <button class="button popup-button" type="button">Подробнее о нас</button>
+                <button class="button" type="button">Подробнее о нас</button>
             </section>
             <section class="contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <img src="img/map.jpg" width="560" height="222" alt="Наш адрес: Россия, г.Москва, ул.Строителей 15">
-                <button class="button popup-button" type="button">Напишите нам</button>
+                <button class="button" type="button">Напишите нам</button>
             </section>
         </main>
         <footer class="main-footer">
             <div class="main-footer__navigation">
-                <a class="main-footer__logo">
-                    <img src="img/device-main-logo.png" width="163" height="36" alt="Логотип интернет магазина гаджетов «Девайс»">
-                </a>
-                <p>г. Москва, ул. Строителей, 15</p>
-                <ul class="user-navigation footer-navigation">
-                    <li class="login-link">
-                        <a href="login.html">Вход</a>
-                    </li>
-                    <li>
-                        <a href="#">Сравнить</a>
-                    </li>
-                    <li>
-                        <a href="#">Корзина</a>
-                    </li>
-                </ul>
-                <ul class="main-footer__site-navigation">
-                    <li><a href="#delivery">Доставка</a></li>
-                    <li><a href="#warranty">Гарантия</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-                <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                <div>
+                    <a href="#" class="main-footer__logo">
+                        <img src="img/device-main-footer-logo.png" width="163" height="36" alt="Логотип интернет магазина гаджетов «Девайс»">
+                    </a>
+                    <p>г. Москва, ул. Строителей, 15</p>
+                </div>
+                <div>
+                    <ul class="user-navigation main-footer__user-navigation">
+                        <li class="login-link">
+                            <a href="#">Вход</a>
+                        </li>
+                        <li>
+                            <a href="#">Сравнить</a>
+                        </li>
+                        <li>
+                            <a href="#">Корзина</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="site-navigation main-footer__site-navigation">
+                        <li><a href="#delivery">Доставка</a></li>
+                        <li><a href="#warranty">Гарантия</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>             
                 <div class="footer-social">
                     <ul>
                         <li>
@@ -202,8 +207,9 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <a href="#" class="button">HTML Academy</a>
+                <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                <a href="#" class="button">HTML Academy</a>
+            </div>            
         </footer>
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
