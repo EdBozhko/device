@@ -66,6 +66,10 @@ h2, h3 {
     background-color: #f7e296;
 }
 
+.main-header-search {
+    width: 200px;
+}
+
 .main-header-search input[type="search"] {
     font-family: "opensanslight", Arial, sans-serif;
     font-size: 15px;
@@ -73,8 +77,9 @@ h2, h3 {
     border: none;
     outline: none;
     outline-offset: none;
-    line-height: 30px;
+    line-height: 32px;
     background-color: transparent;
+    width: 100%;
 }
 
 .main-header-search input:hover {
@@ -83,8 +88,8 @@ h2, h3 {
 
 .main-header-search input:focus {
     opacity: 1;
+    border-bottom: 2px solid #000000;
 }
-/*нет нижней границы*/
 
 .search-button {
     font-family: "opensanslight", Arial, sans-serif;
@@ -93,6 +98,7 @@ h2, h3 {
     background-color: transparent;
     border: 2px solid #000000;
     outline: none;
+    position: absolute;
 }
 
 .search-button:hover {
@@ -291,6 +297,51 @@ h2, h3 {
     line-height: 36px;
 }
 
- {
+.your-name__field::placeholder,
+.email__field::placeholder,
+.text_field::placeholder {
+    color: rgba(70, 70, 70, 0.4);
+    font-family: "opensans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
 
+.your-name__field,
+.email__field,
+.text_field {
+    font-family: "opensans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: rgba(229, 229, 229, 0.5);
+    border: none;
+    width: 360px;
+    height: 50px;
+    padding-left: 20px;
+}
+
+.text_field {
+    width: 760px;
+    height: 156px;
+    padding-top: 20px;
+}
+
+.your-name__field:hover,
+.email__field:hover,
+.text_field:hover {
+    background-color: rgba(229, 229, 229, 0.8);
+}
+
+.your-name__field:focus,
+.email__field:focus,
+.text_field:focus {
+    background-color: transparent;
+    border: 3px solid #f0c52e;
+    outline: none;
+    color: rgba(70, 70, 70, 1);
+    padding-left: 17px;
+}
+
+input:invalid {
+    background-color: rgba(237, 181, 181, 0.5);
+    color: rgba(70, 70, 70, 0.4);
 }
