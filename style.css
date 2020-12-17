@@ -52,6 +52,17 @@ h2, h3 {
     line-height: 48px;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .main-header-logo:hover {
     opacity: 0.6;
 }
@@ -62,7 +73,6 @@ h2, h3 {
 
 .main-navigation {
     color: #000000;
-
     background-color: #f7e296;
 }
 
@@ -77,7 +87,7 @@ h2, h3 {
     border: none;
     outline: none;
     outline-offset: none;
-    line-height: 32px;
+    line-height: 40px;
     background-color: transparent;
     width: 100%;
 }
@@ -91,7 +101,7 @@ h2, h3 {
     border-bottom: 2px solid #000000;
 }
 
-.search-button {
+.main-header-search input:focus + .search-button {
     font-family: "opensanslight", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -99,18 +109,47 @@ h2, h3 {
     border: 2px solid #000000;
     outline: none;
     position: absolute;
+    width: 81px;
+    height: 45px;
+    margin: -1px;
+    padding: 0px;
+    clip: auto;
+    overflow: auto;
 }
 
-.search-button:hover {
-    color: #ffffff;
+.main-header-search input:focus + .search-button:hover {
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
     background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+    outline: none;
+    position: absolute;
+    width: 81px;
+    height: 45px;
+    margin: -1px;
+    padding: 0px;
+    clip: auto;
+    overflow: auto;
 }
 
-.search-button:focus {
+.main-header-search input[type="search"] + .search-button:focus {
+    font-family: "opensanslight", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
     background-color: #000000;
     color: rgba(255, 255, 255, 0.3);
+    border: 2px solid #000000;
+    outline: none;
+    position: absolute;
+    width: 81px;
+    height: 45px;
+    margin: -1px;
+    padding: 0px;
+    clip: auto;
+    overflow: auto;
 }
-/*при нажатии должен меняться только текст кнопки*/
 
 .user-navigation {
     list-style: none;
@@ -119,7 +158,8 @@ h2, h3 {
     line-height: 30px;
 }
 
-.site-navigation {
+.site-navigation, 
+.catalog-menu-link {
     list-style: none;
     font-family: "open", Arial, sans-serif;
     font-size: 18px;
@@ -139,6 +179,7 @@ h2, h3 {
 
 .user-navigation a,
 .site-navigation a,
+.catalog-menu-link,
 .catalog-menu a {
     color: #000000;
     
@@ -146,19 +187,21 @@ h2, h3 {
 
 .user-navigation a:hover,
 .site-navigation a:hover,
+.catalog-menu-link:hover,
 .catalog-menu a:hover {
     opacity: 0.6;
 }
 
 .user-navigation a:focus,
 .site-navigation a:focus,
+.catalog-menu-link:focus,
 .catalog-menu a:focus {
     opacity: 0.3;
 }
 
 .top-gadgets__slide-number {
     font-family: "gilroyextrabold", Arial, sans-serif;
-    font-size: 179.2px;
+    font-size: 180px;
     line-height: 179.2px;
     color: #ffffff;
 }
@@ -198,7 +241,7 @@ h2, h3 {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.table_properties {
+.table-properties {
     font-family: "gilroylight", Arial, sans-serif;
     font-size: 36px;
     line-height: 48px;
@@ -344,4 +387,111 @@ h2, h3 {
 input:invalid {
     background-color: rgba(237, 181, 181, 0.5);
     color: rgba(70, 70, 70, 0.4);
+}
+
+/*сетка*/
+
+.main-header {
+    width: 1160px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.main-navigation {
+    height: 300px;
+}
+
+.main-header-logo {
+    padding-left: 60px;
+    position: relative;
+    top: -20px;
+}
+
+.user-navigation {
+    display: flex;
+    width: 500px;
+    padding: 0px 0px;
+    justify-content: space-between;
+}
+
+.user-navigation .compare-link {
+    margin-left: 240px;
+}
+
+.main-navigation .header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.main-header-search {
+    margin-top: 10px;
+    padding: 0px 0px;
+}
+
+.site-navigation {
+    padding-left: 0px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-menu-box {
+    display: none;
+    padding-left: 0px;
+}
+
+.list-item-column-1 {
+    padding-left: 0px;
+}
+
+.pop-up-menu {
+    margin-top: 20px;
+}
+
+.pop-up-menu:hover .catalog-menu-box {
+    display: flex;
+}
+
+.top-gadgets__slide-holder {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -122px;
+}
+
+.slider-description-box {
+    display: inline-block;
+    min-width: 500px;
+}
+
+.slider-description-box span {
+    right: 50px;
+    position: absolute;
+}
+
+.top-gadgets__tagline {
+    margin-top: 90px;
+}
+
+.slider-description-box button {
+    min-width: 220px;
+}
+
+.table-properties_column-1 {
+    width: 160px;
+}
+
+.table-properties_column-2 {
+    width: 140px;
 }
